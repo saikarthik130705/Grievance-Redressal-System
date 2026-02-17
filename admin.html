@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body onload="loadAdmin()">
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <button onclick="goDashboard()">Dashboard</button>
+        <button onclick="logout()">Logout</button>
+      </aside>
+
+      <main class="main-content">
+        <h2>Citizen Tickets</h2>
+        <div id="adminTickets" class="card-grid"></div>
+
+        <h2 style="margin-top: 30px">Officer Complaints</h2>
+        <div id="officerComplaintsBox" class="card-grid"></div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

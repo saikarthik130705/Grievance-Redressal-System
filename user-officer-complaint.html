@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Report Officer Misconduct</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Maps Places API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+  </head>
+
+  <body onload="initMapAutocomplete()">
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Portal</h2>
+        <button onclick="goDashboard()">Dashboard</button>
+        <button onclick="logout()">Logout</button>
+      </aside>
+
+      <main class="main-content">
+        <div class="form-card">
+          <h2>Report Government Officer</h2>
+
+          <input
+            type="text"
+            id="officerName"
+            placeholder="Officer Name"
+            required
+          />
+
+          <input
+            type="text"
+            id="department"
+            placeholder="Department Name"
+            required
+          />
+
+          <textarea
+            id="officerDescription"
+            placeholder="Describe the issue clearly"
+            required
+          ></textarea>
+
+          <input
+            type="text"
+            id="officerLocation"
+            placeholder="Location (Google Maps)"
+            required
+          />
+
+          <button onclick="submitOfficerComplaint()">Submit Complaint</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

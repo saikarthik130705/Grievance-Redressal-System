@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Submit Issue</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <button onclick="goDashboard()">Dashboard</button>
+      </aside>
+
+      <main class="main-content">
+        <div class="form-card">
+          <h2>Submit Grievance</h2>
+
+          <input type="text" id="location" placeholder="Enter Location" />
+          <textarea
+            id="description"
+            placeholder="Describe the issue"
+          ></textarea>
+          <input type="file" id="beforeImage" />
+
+          <button onclick="submitProblem()">Generate Ticket</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

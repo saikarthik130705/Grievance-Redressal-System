@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sign Up - Smart Tamil Nadu</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="login-body">
+    <div class="glass-card">
+      <h1>Create Account</h1>
+      <p>Register to access the grievance portal</p>
+
+      <input type="text" id="signupName" placeholder="Full Name" required />
+      <input
+        type="email"
+        id="signupEmail"
+        placeholder="Email Address"
+        required
+      />
+      <input
+        type="password"
+        id="signupPassword"
+        placeholder="Password"
+        required
+      />
+
+      <select id="signupRole">
+        <option value="user">Citizen</option>
+        <option value="agent">Government Agent</option>
+        <option value="admin">Administrator</option>
+      </select>
+
+      <button onclick="signup()">Create Account</button>
+
+      <p style="margin-top: 15px">
+        Already have an account?
+        <a href="index.html" style="color: white; text-decoration: underline"
+          >Login</a
+        >
+      </p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

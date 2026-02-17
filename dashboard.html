@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body onload="loadDashboard()">
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Portal</h2>
+        <button onclick="goDashboard()">Dashboard</button>
+        <button onclick="goProfile()">Profile</button>
+        <div id="roleLinks"></div>
+        <button onclick="logout()">Logout</button>
+      </aside>
+
+      <main class="main-content">
+        <h2>Analytics Overview</h2>
+        <div class="card-grid" id="analytics"></div>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
